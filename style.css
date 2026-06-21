@@ -15,7 +15,7 @@ body {
     background-position: center;  /* 圖片居中對齊 */
     background-repeat: no-repeat; /* 圖片不重複平鋪 */
     
-    background-color: #DCDCDC; /* 淺灰色背景 */
+    
     height: 100vh;
     display: flex;
     justify-content: center;
