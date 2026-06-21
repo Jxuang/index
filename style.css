@@ -1,0 +1,54 @@
+/* 清除瀏覽器預設的邊距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 設定整個視窗的背景與邊框 */
+body {
+    background-color: #DCDCDC; /* 淺灰色背景 */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;     /* 將內容靠下方對齊 */
+    padding-bottom: 15vh;      /* 讓按鈕距離底部保持一段距離（約畫面的 15%） */
+    
+    /* 這裡加上你截圖中外圍的淺藍色外框 */
+    border: 4px solid #6495ED; /* 淺藍色邊框，寬度 4px */
+    font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", serif; /* 細緻的新細明體或襯線字體風格 */
+}
+
+/* 內容容器 */
+.container {
+    text-align: center;
+}
+
+/* 導覽按鈕區塊：使用 flex 讓元件水平並排、居中置中 */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* 控制文字與中間線的左右間距 */
+}
+
+/* 超連結字體樣式 */
+.link-item {
+    color: #333333;           /* 深灰色接近黑色的字體 */
+    text-decoration: none;    /* 拔除預設的超連結底線 */
+    font-size: 24px;          /* 字體大小 */
+    letter-spacing: 2px;      /* 字距稍微拉開，比較有設計感 */
+    transition: color 0.3s;   /* 滑鼠移上去時的變色動畫 */
+}
+
+/* 滑鼠移到超連結上的視覺效果（互動感） */
+.link-item:hover {
+    color: #6495ED;           /* 滑鼠移上去時會變成跟外框一樣的淺藍色 */
+}
+
+/* 中間垂直分隔線的樣式 */
+.divider {
+    width: 2px;               /* 線條寬度 */
+    height: 40px;             /* 線條高度 */
+    background-color: #333333;/* 線條顏色 */
+}
