@@ -15,7 +15,6 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    /* ❌ 刪除原本的 align-items: center; */
     
     border: 4px solid #6495ED; 
 }
@@ -27,72 +26,40 @@ body {
     flex-direction: column;
     align-items: center;     /* 水平置中 */
     
-    /* 🛠️ 核心修改 1：利用 margin-top 讓整個綠色區塊從螢幕上方往下移，調整這個數字就能控制整體高度位置 */
     margin-top: 8vh; 
-    
-    /* 🛠️ 核心修改 2：把內容向上撐開，給文字舒適的空間，絕對不會爆開 */
-    padding-top: 60px;       /* 控制 Unsent 距離綠色區塊頂部的距離 */
-    padding-bottom: 60px;    /* 確保底部的字有留白，不會被切掉 */
-}
-
-/* 🛠️ 核心修改 3：單獨拉開大標題與下方選單的距離 */
-.main-title {
-    margin-bottom: 40px;     /* 數字越大，下方的「個人報告」就會越往下推 */
-}
-/* 🛠️ 核心修改 3：單獨拉開大標題與下方選單的距離 */
-.main-title {
-    margin-bottom: 40px;     /* 數字越大，下方的「個人報告」就會越往下推 */
-}
-padding-bottom: 100px;/* 撐滿整個 body */
+    padding-top: 60px;       
+    padding-bottom: 100px;   /* 確保底部有足夠留白空間 */
     width: 100%;
 }
 
-/* 導覽按鈕區塊：使用 flex 讓元件水平並排、居中置中 */
+/* 大標題樣式 */
+.main-title {
+    color: white;            /* 確保字體顏色為白色 */
+    font-size: 4rem;         /* 如果想改大標題大小可以在這調 */
+}
+
+/* 導覽按鈕區塊：強行拉高位置並橫向並排 */
 .nav-links {
     position: relative !important;
-    top: -80px !important;
-    display: flex !important;  /* 關鍵：強制讓兩個連結和線橫向排成一排 */
+    top: -120px !important;    /* 🛠️ 重點：負數代表往上抽！如果覺得太高，可以改成 -100px */
+    
+    display: flex !important;  
     flex-direction: row !important; 
-    align-items: center !important; /* 讓字和線垂直置中對齊 */
+    align-items: center !important; 
     justify-content: center !important;
-    gap: 70px; /* 控制文字與中間線的左右間距 */
-    margin-bottom:100px;
+    gap: 70px;                /* 控制文字與中間線的左右間距 */
 }
 
 /* 超連結字體樣式 */
 .link-item {
-    color: white;           /* 深灰色接近黑色的字體 */
-    text-decoration: none;    /* 拔除預設的超連結底線 */
-    font-size: 24px;          /* 字體大小 */
-    letter-spacing: 2px;      /* 字距稍微拉開，比較有設計感 */
-    transition: color 0.3s;   /* 滑鼠移上去時的變色動畫 */
-    
-    /* 修正地方：把中文引號改為英文半形引號 " */
-    font-family: "BatangChe", serif; 
+    color: white;            /* 修正文字顏色為白色 */
+    text-decoration: none;   /* 移除超連結下底線 */
+    font-size: 1.2rem;       /* 控制選單文字大小 */
 }
 
-/* 滑鼠移到超連結上的視覺效果（互動感） */
-.link-item:hover {
-    color: #6495ED;           /* 滑鼠移上去時會變成跟外框一樣的淺藍色 */
-}
-
-/* 中間垂直分隔線的樣式 */
+/* 分隔線樣式 */
 .divider {
-    width: 2px;               /* 線條寬度 */
-    height: 40px;             /* 線條高度 */
-    background-color: #333333;/* 線條顏色 */
-    margin: 0 15px !important; /* 控制線條左右的間距 */
-}
-}
-/* 控制正中間的大標題字體 */
-.main-title {
-    position: relative !important;
-    top: -50px !important;
-    font-size: 120px;          
-    font-weight: 900;          
-    color: white;            /* 👈 換成精緻的奶油白 (Cream White) */
-    letter-spacing: 4px;       
-    margin-bottom: auto;       /* 關鍵：自動把下方的按鈕往下推 */
-    margin-top: 200px;          /* 關鍵：配合上下 auto 達成絕對垂直居中 */
-    font-family: "Arial Black", "BatangChe", sans-serif;
+    width: 1px;
+    height: 25px;
+    background-color: white; /* 確保分隔線是白色的，看得到它 */
 }
