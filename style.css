@@ -62,4 +62,32 @@ body {
     width: 1px;
     height: 25px;
     background-color: white; /* 確保分隔線是白色的，看得到它 */
+}    color: white;            /* 確保字體顏色為白色 */
+    font-size: 4rem;         /* 如果想改大標題大小可以在這調 */
+}
+
+/* 導覽按鈕區塊：強行拉高位置並橫向並排 */
+.nav-links {
+    position: relative !important;
+    top: -120px !important;    /* 🛠️ 重點：負數代表往上抽！如果覺得太高，可以改成 -100px */
+    
+    display: flex !important;  
+    flex-direction: row !important; 
+    align-items: center !important; 
+    justify-content: center !important;
+    gap: 70px;                /* 控制文字與中間線的左右間距 */
+}
+
+/* 超連結字體樣式 */
+.link-item {
+    color: white;            /* 修正文字顏色為白色 */
+    text-decoration: none;   /* 移除超連結下底線 */
+    font-size: 1.2rem;       /* 控制選單文字大小 */
+}
+
+/* 分隔線樣式 */
+.divider {
+    width: 1px;
+    height: 25px;
+    background-color: white; /* 確保分隔線是白色的，看得到它 */
 }
