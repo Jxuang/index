@@ -61,3 +61,14 @@ body {
     height: 40px;             /* 線條高度 */
     background-color: #333333;/* 線條顏色 */
 }
+/* 控制正中間的大標題字體 */
+.main-title {
+    font-size: 120px;          /* 字體放大（可以根據 Figma 數值調整） */
+    font-weight: 900;          /* 讓字體極粗 (Black/Heavy) */
+    color: #000000;            /* 顏色設定為純黑 */
+    letter-spacing: 2px;       /* 稍微拉開字距 */
+    margin-bottom: 80px;       /* 關鍵！讓大字跟下面的按鈕保持 80px 的距離，不會擠在一起 */
+    
+    /* 設定字體（這裡沿用你按鈕的 BatangChe，或者你想用無襯線的 Arial 也可以） */
+    font-family: "Arial Black", "BatangChe", sans-serif; 
+}
