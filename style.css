@@ -7,7 +7,7 @@
 
 /* 設定整個視窗的背景與邊框 */
 body {
-    /* 1. 載入你的圖片（請確保檔名完全一致） */
+    /* 1. 載入你的圖片（請確保 GitHub 上也有一個完全叫 01.JPG 的檔案） */
     background-image: url("01.JPG"); 
     
     /* 2. 讓背景圖完美滿版的關鍵三行 */
@@ -15,16 +15,14 @@ body {
     background-position: center;  /* 圖片居中對齊 */
     background-repeat: no-repeat; /* 圖片不重複平鋪 */
     
-    
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;     /* 將內容靠下方對齊 */
-    padding-bottom: 15vh;      /* 讓按鈕距離底部保持一段距離（約畫面的 15%） */
+    padding-bottom: 150px;     /* 回復精準控制：整個區塊距離底部的高度 */
     
     /* 這裡加上你截圖中外圍的淺藍色外框 */
     border: 4px solid #6495ED; /* 淺藍色邊框，寬度 4px */
-    font-family: ”BatangChe“; /* 細緻的新細明體或襯線字體風格 */
 }
 
 /* 內容容器 */
@@ -47,6 +45,9 @@ body {
     font-size: 24px;          /* 字體大小 */
     letter-spacing: 2px;      /* 字距稍微拉開，比較有設計感 */
     transition: color 0.3s;   /* 滑鼠移上去時的變色動畫 */
+    
+    /* 修正地方：把中文引號改為英文半形引號 " */
+    font-family: "BatangChe", serif; 
 }
 
 /* 滑鼠移到超連結上的視覺效果（互動感） */
