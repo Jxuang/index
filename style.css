@@ -16,7 +16,7 @@ body {
     
     /* 這裡加上你截圖中外圍的淺藍色外框 */
     border: 4px solid #6495ED; /* 淺藍色邊框，寬度 4px */
-    font-family: "PingFang TC", "Heiti TC", "Microsoft JhengHei", serif; /* 細緻的新細明體或襯線字體風格 */
+    font-family: ”BatangChe“; /* 細緻的新細明體或襯線字體風格 */
 }
 
 /* 內容容器 */
