@@ -40,7 +40,7 @@ body {
 
 /* 超連結字體樣式 */
 .link-item {
-    color: #333333;           /* 深灰色接近黑色的字體 */
+    color: #FFFDD0;           /* 深灰色接近黑色的字體 */
     text-decoration: none;    /* 拔除預設的超連結底線 */
     font-size: 24px;          /* 字體大小 */
     letter-spacing: 2px;      /* 字距稍微拉開，比較有設計感 */
