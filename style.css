@@ -29,7 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px; /* 控制文字與中間線的左右間距 */
+    gap: 70px; /* 控制文字與中間線的左右間距 */
 }
 
 /* 超連結字體樣式 */
