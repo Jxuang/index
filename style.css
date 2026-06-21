@@ -18,8 +18,8 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-end;     /* 將內容靠下方對齊 */
-    padding-bottom: 150px;     /* 回復精準控制：整個區塊距離底部的高度 */
+    align-items: center;     /* 將內容靠下方對齊 */
+   
     
     /* 這裡加上你截圖中外圍的淺藍色外框 */
     border: 4px solid #6495ED; /* 淺藍色邊框，寬度 4px */
@@ -28,6 +28,12 @@ body {
 /* 內容容器 */
 .container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 關鍵：讓大字垂直居中 */
+    align-items: center;     /* 水平置中 */
+    height: 100%;            /* 撐滿整個 body */
+    width: 100%;
 }
 
 /* 導覽按鈕區塊：使用 flex 讓元件水平並排、居中置中 */
@@ -63,12 +69,11 @@ body {
 }
 /* 控制正中間的大標題字體 */
 .main-title {
-    font-size: 120px;          /* 字體放大（可以根據 Figma 數值調整） */
-    font-weight: 900;          /* 讓字體極粗 (Black/Heavy) */
-    color: #000000;            /* 顏色設定為純黑 */
-    letter-spacing: 2px;       /* 稍微拉開字距 */
-    margin-bottom: 80px;       /* 關鍵！讓大字跟下面的按鈕保持 80px 的距離，不會擠在一起 */
-    
-    /* 設定字體（這裡沿用你按鈕的 BatangChe，或者你想用無襯線的 Arial 也可以） */
-    font-family: "Arial Black", "BatangChe", sans-serif; 
+    font-size: 120px;          
+    font-weight: 900;          
+    color: #FFFDD0;            /* 👈 換成精緻的奶油白 (Cream White) */
+    letter-spacing: 4px;       
+    margin-bottom: auto;       /* 關鍵：自動把下方的按鈕往下推 */
+    margin-top: auto;          /* 關鍵：配合上下 auto 達成絕對垂直居中 */
+    font-family: "Arial Black", "BatangChe", sans-serif;
 }
