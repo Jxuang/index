@@ -42,7 +42,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 70px; /* 控制文字與中間線的左右間距 */
-    margin-top:20px;
+    margin-top:0px;
 }
 
 /* 超連結字體樣式 */
