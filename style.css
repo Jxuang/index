@@ -44,7 +44,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 70px; /* 控制文字與中間線的左右間距 */
-    margin-top:0px;
+    margin-bottom:100px;
 }
 
 /* 超連結字體樣式 */
@@ -77,6 +77,6 @@ body {
     color: white;            /* 👈 換成精緻的奶油白 (Cream White) */
     letter-spacing: 4px;       
     margin-bottom: auto;       /* 關鍵：自動把下方的按鈕往下推 */
-    margin-top: 100px;          /* 關鍵：配合上下 auto 達成絕對垂直居中 */
+    margin-top: 200px;          /* 關鍵：配合上下 auto 達成絕對垂直居中 */
     font-family: "Arial Black", "BatangChe", sans-serif;
 }
