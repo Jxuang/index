@@ -39,6 +39,10 @@ body {
 .main-title {
     margin-bottom: 40px;     /* 數字越大，下方的「個人報告」就會越往下推 */
 }
+/* 🛠️ 核心修改 3：單獨拉開大標題與下方選單的距離 */
+.main-title {
+    margin-bottom: 40px;     /* 數字越大，下方的「個人報告」就會越往下推 */
+}
 padding-bottom: 100px;/* 撐滿整個 body */
     width: 100%;
 }
