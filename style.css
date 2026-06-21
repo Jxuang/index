@@ -8,7 +8,7 @@
 /* 設定整個視窗的背景與邊框 */
 body {
     /* 1. 載入你的圖片（請確保檔名完全一致） */
-    background-image: url("01.jpg"); 
+    background-image: url("01.JPG"); 
     
     /* 2. 讓背景圖完美滿版的關鍵三行 */
     background-size: cover;       /* 圖片自動縮放填滿整個螢幕，不留白邊、不變形 */
