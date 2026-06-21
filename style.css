@@ -74,6 +74,6 @@ body {
     color: white;            /* 👈 換成精緻的奶油白 (Cream White) */
     letter-spacing: 4px;       
     margin-bottom: auto;       /* 關鍵：自動把下方的按鈕往下推 */
-    margin-top: auto;          /* 關鍵：配合上下 auto 達成絕對垂直居中 */
+    margin-top: 100px;          /* 關鍵：配合上下 auto 達成絕對垂直居中 */
     font-family: "Arial Black", "BatangChe", sans-serif;
 }
