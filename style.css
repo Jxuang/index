@@ -32,7 +32,9 @@ body {
     flex-direction: column;
     justify-content: center; /* 關鍵：讓大字垂直居中 */
     align-items: center;     /* 水平置中 */
-    height: 100%;            /* 撐滿整個 body */
+    min-height: 500px;
+    padding-top: 100px;
+    padding-bottom: 100px;/* 撐滿整個 body */
     width: 100%;
 }
 
