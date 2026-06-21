@@ -51,9 +51,10 @@ padding-bottom: 100px;/* 撐滿整個 body */
 .nav-links {
     position: relative !important;
     top: -80px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;  /* 關鍵：強制讓兩個連結和線橫向排成一排 */
+    flex-direction: row !important; 
+    align-items: center !important; /* 讓字和線垂直置中對齊 */
+    justify-content: center !important;
     gap: 70px; /* 控制文字與中間線的左右間距 */
     margin-bottom:100px;
 }
@@ -80,6 +81,8 @@ padding-bottom: 100px;/* 撐滿整個 body */
     width: 2px;               /* 線條寬度 */
     height: 40px;             /* 線條高度 */
     background-color: #333333;/* 線條顏色 */
+    margin: 0 15px !important; /* 控制線條左右的間距 */
+}
 }
 /* 控制正中間的大標題字體 */
 .main-title {
