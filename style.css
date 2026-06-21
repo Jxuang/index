@@ -7,6 +7,14 @@
 
 /* 設定整個視窗的背景與邊框 */
 body {
+    /* 1. 載入你的圖片（請確保檔名完全一致） */
+    background-image: url("01.jpg"); 
+    
+    /* 2. 讓背景圖完美滿版的關鍵三行 */
+    background-size: cover;       /* 圖片自動縮放填滿整個螢幕，不留白邊、不變形 */
+    background-position: center;  /* 圖片居中對齊 */
+    background-repeat: no-repeat; /* 圖片不重複平鋪 */
+    
     background-color: #DCDCDC; /* 淺灰色背景 */
     height: 100vh;
     display: flex;
@@ -51,20 +59,4 @@ body {
     width: 2px;               /* 線條寬度 */
     height: 40px;             /* 線條高度 */
     background-color: #333333;/* 線條顏色 */
-}
-/* 這是原本就在裡面的分隔線設定 */
-.divider {
-    width: 2px;               
-    height: 50px;             
-    background-color: #333333;
-}
-
-/* 貼在這裡！直接加在最下面 */
-.web-img {
-    width: 1920px;       /* 寬度改為 1920 像素 */
-    height: 1080px;      /* 高度改為 1080 像素 */
-    object-fit: cover;   /* 保護圖片比例不變形 */
-    border-radius: 8px;  
-    display: block;      
-    margin: 20px auto;   
 }
