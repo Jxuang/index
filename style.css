@@ -7,22 +7,17 @@
 
 /* 設定整個視窗的背景與邊框 */
 body {
-    /* 1. 載入你的圖片（請確保 GitHub 上也有一個完全叫 01.JPG 的檔案） */
     background-image: url("01.JPG"); 
-    
-    /* 2. 讓背景圖完美滿版的關鍵三行 */
-    background-size: cover;       /* 圖片自動縮放填滿整個螢幕，不留白邊、不變形 */
-    background-position: center;  /* 圖片居中對齊 */
-    background-repeat: no-repeat; /* 圖片不重複平鋪 */
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
     
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;     /* 將內容靠下方對齊 */
-   
+    /* ❌ 刪除原本的 align-items: center; */
     
-    /* 這裡加上你截圖中外圍的淺藍色外框 */
-    border: 4px solid #6495ED; /* 淺藍色邊框，寬度 4px */
+    border: 4px solid #6495ED; 
 }
 
 /* 內容容器 */
@@ -30,11 +25,21 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* 關鍵：讓大字垂直居中 */
     align-items: center;     /* 水平置中 */
-    min-height: 500px;
-    padding-top: 100px;
-    padding-bottom: 100px;/* 撐滿整個 body */
+    
+    /* 🛠️ 核心修改 1：利用 margin-top 讓整個綠色區塊從螢幕上方往下移，調整這個數字就能控制整體高度位置 */
+    margin-top: 8vh; 
+    
+    /* 🛠️ 核心修改 2：把內容向上撐開，給文字舒適的空間，絕對不會爆開 */
+    padding-top: 60px;       /* 控制 Unsent 距離綠色區塊頂部的距離 */
+    padding-bottom: 60px;    /* 確保底部的字有留白，不會被切掉 */
+}
+
+/* 🛠️ 核心修改 3：單獨拉開大標題與下方選單的距離 */
+.main-title {
+    margin-bottom: 40px;     /* 數字越大，下方的「個人報告」就會越往下推 */
+}
+padding-bottom: 100px;/* 撐滿整個 body */
     width: 100%;
 }
 
