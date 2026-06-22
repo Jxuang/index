@@ -11,7 +11,7 @@
         }
         body {
             background-image: url("01.JPG"); 
-            background-size: cover;       
+            background-size: cover;      
             background-position: center;  
             background-repeat: no-repeat; 
             height: 100vh;
@@ -25,7 +25,7 @@
             flex-direction: column;
             align-items: center;     
             margin-top: 8vh; 
-            padding-top: 60px;       
+            padding-top: 60px;      
             padding-bottom: 100px;   
             width: 100%;
         }
@@ -42,15 +42,26 @@
             justify-content: center !important;
             gap: 70px;                
         }
+        
+        /* 1. 基礎文字樣式 */
         .link-item {
-            color: white;            
+            color: #000000;          /* 修改預設顏色為黑色（如你示意圖） */
             text-decoration: none;   
-            font-size: 1.2rem;       
+            font-size: 1.5rem;       /* 微調大一點比較好點擊 */
+            font-weight: bold;
+            transition: color 0.2s ease-in-out; /* 關鍵：滑動變色的平滑動畫 */
         }
+
+        /* 2. 滑鼠懸停 (Hover) 變色效果 */
+        .link-item:hover {
+            color: #6495ED;          /* 這裡改成你想要的懸停顏色，目前設定成跟邊框一樣的藍色 */
+        }
+
+        /* 3. 分隔線顏色 */
         .divider {
             width: 1px;
             height: 25px;
-            background-color: white; 
+            background-color: #000000; /* 修改為黑色（如你示意圖） */
         }
     </style>
 </head>
