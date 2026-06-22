@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>個人報告</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #FFFDE0; /* 接近你圖片中的淡黃色背景 */
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center;     /* 垂直置中 */
+            overflow: hidden;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+        }
+
+        /* 按鈕容器：讓三個方塊橫向排列並拉開間距 */
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            gap: 80px; /* 方塊之間的左右間距，可依喜好調整 */
+        }
+
+        /* 圓角方塊基礎樣式 */
+        .card-item {
+            width: 240px;             /* 方塊寬度 */
+            height: 180px;            /* 方塊高度 */
+            background-color: #7296CD; /* 接近你圖片中的藍色 */
+            border: 2px solid #5A85C0; /* 淡淡的邊框（如圖） */
+            border-radius: 25px;      /* 圓角弧度 */
+            
+            /* 文字置中與樣式 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;    /* 移除超連結底線 */
+            color: #FFFFFF;           /* 白色文字 */
+            font-size: 1.5rem;
+            font-weight: bold;
+            
+            /* 平滑動畫效果 */
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* 滑鼠懸停 (Hover) 互動效果 */
+        .card-item:hover {
+            background-color: #5A85C0; /* 懸停時顏色加深 */
+            transform: translateY(-5px); /* 微妙的往上浮動感，增加高級感 */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* 加上淡淡的陰影 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <a href="report.html" class="card-item">貢獻報告書</a>
+        <a href="video.html" class="card-item">影片宣傳</a>
+        <a href="poster.html" class="card-item">海報</a>
+    </div>
+
+</body>
+</html>
