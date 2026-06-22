@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>海報作品</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #FFFDE0; /* 維持與個人報告頁一樣的淡黃色背景 */
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center;     /* 垂直置中 */
+            overflow: hidden;
+        }
+        .poster-container {
+            max-width: 90%;  /* 限制圖片最大寬度為螢幕的 90% */
+            max-height: 90%; /* 限制圖片最大高度為螢幕的 90% */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* 幫海報加上淡淡的陰影襯托高級感 */
+            border-radius: 10px; /* 如果海報想加一點點圓角（不需要可刪掉這行） */
+        }
+        .poster-img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            object-fit: contain; /* 確保圖片不變形地完整呈現 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="poster-container">
+        <img src="s1411322009_海報_.pdf" alt="海報作品" class="poster-img">
+    </div>
+
+</body>
+</html>
