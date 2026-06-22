@@ -10,32 +10,32 @@
             box-sizing: border-box;
         }
         body {
-            background-color: #FFFDE0; /* 維持與個人報告頁一樣的淡黃色背景 */
-            height: 100vh;
+            background-color: #FFFDE0; /* 維持淡黃色背景 */
             width: 100vw;
+            min-height: 100vh;        /* 🛠️ 改成最小高度，允許網頁往下延伸 */
             display: flex;
-            justify-content: center; /* 水平置中 */
-            align-items: center;     /* 垂直置中 */
-            overflow: hidden;
+            justify-content: center;   /* 水平置中 */
+            align-items: flex-start;   /* 🛠️ 改成從頂部開始排列，這樣往下捲動才正常 */
+            padding: 40px 0;           /* 🛠️ 上下留白 40px，讓海報上下有呼吸空間，不會貼死邊緣 */
         }
         .poster-container {
-            max-width: 90%;  /* 限制圖片最大寬度為螢幕的 90% */
-            max-height: 90%; /* 限制圖片最大高度為螢幕的 90% */
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* 幫海報加上淡淡的陰影襯托高級感 */
-            border-radius: 10px; /* 如果海報想加一點點圓角（不需要可刪掉這行） */
+            width: 90%;                /* 寬度佔螢幕的 90% */
+            max-width: 800px;          /* 🛠️ 限制最大寬度，防止在大螢幕上圖片被拉得太大變形 */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* 淡淡的陰影襯托高級感 */
+            border-radius: 10px;       /* 圓角 */
+            overflow: hidden;          /* 確保圖片圓角完美裁切 */
         }
         .poster-img {
-            max-width: 100%;
-            max-height: 100%;
+            width: 100%;               /* 🛠️ 讓圖片寬度撐滿容器 */
+            height: auto;              /* 🛠️ 高度自動依比例延伸，長圖就能完整顯示並滾動了 */
             display: block;
-            object-fit: contain; /* 確保圖片不變形地完整呈現 */
         }
     </style>
 </head>
 <body>
 
     <div class="poster-container">
-        <img src="s1411322009_海報_.pdf" alt="海報作品" class="poster-img">
+        <img src="my_poster.jpg" alt="海報作品" class="poster-img">
     </div>
 
 </body>
