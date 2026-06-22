@@ -17,59 +17,47 @@
             height: 100vh;
             display: flex;
             justify-content: center;
+            align-items: center; /* 讓整體內容在螢幕上完美上下置中 */
             border: 4px solid #6495ED; 
         }
         .container {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;     
-            margin-top: 8vh; 
-            padding-top: 60px;      
-            padding-bottom: 100px;   
             width: 100%;
-        }
-        .main-title {
-            color: white;            
-            font-size: 4rem;         
+            display: flex;
+            justify-content: center;
         }
         .nav-links {
-            position: relative !important;
-            top: 200px !important;    
-            display: flex !important;  
-            flex-direction: row !important; 
-            align-items: center !important; 
-            justify-content: center !important;
-            gap: 70px;                
+            display: flex;  
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: center;
+            gap: 150px; /* 調整文字與中間分隔線的左右間距，使其像圖片一樣開闊 */
         }
         
         /* 1. 基礎文字樣式 */
         .link-item {
-            color: #000000;          /* 修改預設顏色為黑色（如你示意圖） */
+            color: #000000;          /* 預設為黑色（如圖所示） */
             text-decoration: none;   
-            font-size: 1.5rem;       /* 微調大一點比較好點擊 */
-            font-weight: bold;
-            transition: color 0.2s ease-in-out; /* 關鍵：滑動變色的平滑動畫 */
+            font-size: 2rem;         /* 放大字體大小 */
+            font-weight: normal;     /* 維持一般粗細 */
+            transition: color 0.2s ease-in-out; /* 滑動變色的平滑動畫 */
         }
 
         /* 2. 滑鼠懸停 (Hover) 變色效果 */
         .link-item:hover {
-            color: #6495ED;          /* 這裡改成你想要的懸停顏色，目前設定成跟邊框一樣的藍色 */
+            color: #6495ED;          /* 懸停時變色（目前設定為跟邊框一樣的藍色，你可以自己改） */
         }
 
-        /* 3. 分隔線顏色 */
+        /* 3. 分隔線樣式 */
         .divider {
-            width: 1px;
-            height: 25px;
-            background-color: #000000; /* 修改為黑色（如你示意圖） */
+            width: 2px;              /* 線條粗細 */
+            height: 100px;           /* 線條高度（如圖中較高的黑線） */
+            background-color: #000000; /* 分隔線為黑色 */
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1 class="main-title">Unsent</h1>
-
         <div class="nav-links">
             <a href="personal.html" class="link-item">個人報告</a>
             <div class="divider"></div>
