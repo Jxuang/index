@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>團隊宣傳片</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #FFFDE0; /* 淡黃色背景 */
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+            overflow: hidden;
+        }
+        
+        /* 影片容器 */
+        .video-container {
+            width: 80%;
+            max-width: 900px;
+            aspect-ratio: 16 / 9; /* 維持 16:9 */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-radius: 12px;
+            overflow: hidden; 
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JYdwLHwjLMs?si=nuP6tNjSJhj3yeKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>
