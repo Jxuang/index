@@ -19,6 +19,22 @@
             position: relative; /* 讓內部的絕對定位可以對齊螢幕 */
             border: 4px solid #6495ED; 
             overflow: hidden;
+            /* 套用古典襯線字體 */
+            font-family: "Times New Roman", "PMingLiU", "SimSun", "Songti TC", serif;
+        }
+        
+        /* 🛠️ 新增：上排學號姓名文字樣式 */
+        .top-header {
+            position: absolute;
+            top: 25vh;           /* 調整文字距離螢幕頂部的高度，可以根據畫面微調 */
+            left: 50%;
+            transform: translateX(-50%); /* 水平置中 */
+            color: #FFFDD0;      /* 使用跟你原本按鈕一樣的淡米黃色文字 */
+            font-size: 2rem;     /* 字體大小 */
+            font-weight: 500;
+            letter-spacing: 2px; /* 字距微調 */
+            white-space: nowrap; /* 確保文字在同一行不換行 */
+            text-align: center;
         }
         
         /* 選單容器：強制固定在畫面的下半部 */
@@ -60,6 +76,8 @@
     </style>
 </head>
 <body>
+
+    <h1 class="top-header">多媒二11411322009余靜宣</h1>
 
     <div class="nav-links">
         <a href="personal.html" class="link-item">個人報告</a>
