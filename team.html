@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>團隊專題</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #FFFDE0; /* 延用與個人報告頁相同的淡黃色背景 */
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center;     /* 垂直置中 */
+            overflow: hidden;
+            /* 套用你指定的古典襯線字體 */
+            font-family: "Times New Roman", "PMingLiU", "SimSun", "Songti TC", serif;
+        }
+
+        /* 四宮格容器：利用 Flexbox 換行特性或設定寬度自動分兩列 */
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;       /* 允許換行 */
+            width: 600px;          /* 限制總寬度，讓方塊兩個一排自動換行 */
+            gap: 60px 80px;        /* 控制方塊間距（上下 60px，左右 80px） */
+            justify-content: center;
+        }
+
+        /* 圓角方塊樣式（與個人報告頁維持視覺一致） */
+        .card-item {
+            width: 240px;             /* 方塊寬度 */
+            height: 180px;            /* 方塊高度 */
+            background-color: #7296CD; /* 藍色背景 */
+            border: 2px solid #5A85C0; 
+            border-radius: 25px;      /* 圓角 */
+            
+            /* 文字置中與樣式 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;    /* 移除超連結底線 */
+            color: #FFFFFF;           /* 白色文字 */
+            font-size: 1.6rem;        /* 字體大小 */
+            letter-spacing: 2px;      /* 字距微調，看起來更有質感 */
+            
+            /* 平滑互動動畫 */
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* 滑鼠懸停 (Hover) 互動效果 */
+        .card-item:hover {
+            background-color: #5A85C0; /* 懸停時顏色加深 */
+            transform: translateY(-5px); /* 微微上浮 */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* 淡淡的陰影 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <a href="presentation.html" class="card-item">簡報</a>
+        <a href="promo_video.html" class="card-item">宣傳片</a>
+        <a href="proposal.html" class="card-item">企劃書</a>
+        <a href="final_report.html" class="card-item">結案報告書</a>
+    </div>
+
+</body>
+</html>
