@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>《UnSENT》遊戲企劃書</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #FFFDE0; /* 延用你的淡黃色背景 */
+            color: #1a1a1a;
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 60px 20px;
+            /* 套用你指定的古典襯線字體 */
+            font-family: "Times New Roman", "PMingLiU", "SimSun", "Songti TC", serif;
+            line-height: 1.8;
+        }
+
+        /* 企劃書內容容器 */
+        .document-container {
+            width: 100%;
+            max-width: 850px;
+            background-color: transparent; /* 保持與背景一致 */
+        }
+
+        /* 標題樣式 */
+        h1 {
+            font-size: 2.4rem;
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #555;
+            margin-bottom: 50px;
+            border-bottom: 2px solid #7296CD; /* 藍色底線分隔 */
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #7296CD; /* 使用按鈕的藍色做為主要段落標題 */
+            border-left: 5px solid #7296CD;
+            padding-left: 12px;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-align: justify;
+            text-indent: 2em; /* 首行縮進兩字體 */
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 40px;
+            font-size: 1.1rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* 表格樣式微調，呈現出乾淨、專業的報告感 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1.05rem;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(114, 150, 205, 0.15); /* 淡淡的按鈕藍底 */
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #b13434; /* 微恐氛圍的暗紅色強調 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="document-container">
+        <h1>《UnSENT》遊戲企劃書與期末報告</h1>
+        <div class="subtitle">
+            國立臺中科技大學 114 學年度下學期 · 多媒體系統設計(二)課程<br>
+            指導老師：陳賢錫 | 班級：多媒二1 | 組員：崔子育、余靜宣、林思妤、呂佳馨、陳昱辰
+        </div>
+
+        <h2>壹、遊戲摘要與製作初期構想</h2>
+        <h3>(一)、遊戲初步動機</h3>
+        <p>在日常生活中，垃圾郵件、廣告郵件以及各類詐騙簡訊無處不在，這些訊息往往帶有一種神秘或令人不安的色彩。本遊戲以此為靈感來源，將日常中習以為常的信件篩選工作，轉化為具備微恐、驚悚元素的劇情解謎遊戲，探討科技背後的隱私危機與企業黑幕。</p>
+        
+        <h3>(二)、遊戲目的</h3>
+        <p>透過玩家扮演的夜班秘書角色，在處理看似平凡卻暗藏玄機的信件過程中，逐步拼湊出一家大型科技公司背後的非法實驗真相。遊戲旨在引發玩家對於企業道德、個人利益與社會正義之間的權衡與反思。</p>
+
+        <h2>貳、基本介紹與玩法</h2>
+        <h3>(一)、操作方法</h3>
+        <p>遊戲採用極簡的滑鼠點擊互動介面。玩家全程在仿舊的電腦系統畫面上操作，主要透過滑鼠點擊來閱讀信件、分類信件（儲存、刪除或上報），以及進行遊戲內的功能設定與存讀檔。</p>
+        
+        <h3>(二)、遊戲優勢與定位</h3>
+        <ul>
+            <li><strong>獨特題材</strong>：結合反烏托邦企業黑幕與辦公室驚悚，市場上少見同類型的信件篩選核心玩法。</li>
+            <li><strong>復古美術</strong>：仿舊的 Windows 與 DOS 系統介面，搭配陰暗雜物間的視覺設計，營造強烈的心理壓抑感。</li>
+            <li><strong>多結局機制</strong>：隱藏的數值結算影響命運，提高遊戲的重複遊玩價值。</li>
+        </ul>
+
+        <h3>(三)、遊戲整體流程與玩法基本簡介</h3>
+        <p>整個遊戲共分為 7 個關卡（包含第 1 天的新手教學引導）。主角 Marco Morton（38歲，面臨失業與房租催繳危機的中年男子）必須在 IMM 科技公司的雜物間裡，使用老舊翻新電腦處理來自各部門主管的郵件。每一天結束後都會有當日的結算畫面，而玩家的每一次郵件留存抉擇，都將決定最終的命運。</p>
+
+        <h2>參、《UnSENT》故事大綱 & 結局</h2>
+        <h3>(一)、故事大綱</h3>
+        <p>Marco Morton 在走投無路之際，錄取了 IMM 科技公司的夜班「信件秘書」。工作內容十分簡單：在深夜分類、篩選主管們的郵件。然而，隨著天數推進，郵件中開始出現詭異的字眼、被抹除的實驗記錄、以及求救信號。Marco 漸漸發現，這家高薪聘請他的企業，正在進行一項針對社會邊緣人的非法大腦與行為改造實驗……</p>
+        
+        <h3>(二)、多結局機制</h3>
+        <p>遊戲內含三項隱密轉動的數值：<span class="highlight">【蒐證度】</span>、<span class="highlight">【忠誠度】</span>與<span class="highlight">【暴露值】</span>。根據最後一晚的累計結算，將導向以下三種截然不同的結局：</p>
+        <ol>
+            <li><span class="highlight">Good Ending (揭發者)</span>：玩家成功收集關鍵證據，聯合 IMM 的競爭對手全面揭發非法邊緣人實驗。Marco 獲得了巨額的舉報獎金，然而在三個月後，他卻死於一場詭異且查不出原因的車禍，暗示遭到了企業殘黨的報復。</li>
+            <li><span class="highlight">Normal Ending (忠誠的走狗)</span>：玩家選擇站在公司立場，徹底粉碎並刪除所有黑幕證據。Marco 的忠誠獲得了高層的賞識，最終同流合污，晉升為秘書室主管，成為體制的一部分。</li>
+            <li><span class="highlight">Bad Ending (無事發生)</span>：因暴露值過高、分心出錯或是未達工作指標，Marco 在第七天深夜直接被公司無情解雇，所有的黑幕與秘密再次被掩埋。Marco 最終在公寓後巷的寒冬中凍餓而死。</li>
+        </ol>
+
+        <h2>肆、遊戲美術與場景設定</h2>
+        <p>遊戲美術風格圍繞「復古科技」與「心理驚悚」。主畫面為仿 Windows 95/98 的信箱介面，搭配斑駁、帶有映像管（CRT）線條的視覺濾鏡。主角所處的空間是公司最底層的狹小雜物間，四處堆放著紙箱與廢棄硬體，與明亮現代的 IMM 大樓外觀形成強烈對比。目前，所有的主菜單、信箱 UI、背景模板以及結局 CG 動畫皆已完成 100%。</p>
+
+        <h2>伍、團隊分工與目前期末進度報告</h2>
+        <p>目前《UnSENT》的團隊總開發進度為 <span class="highlight">78%</span>。其中設計組素材準備非常充分（完成度 93%），程式組正全力進行核心系統的串接與除錯（完成度 63%）。詳細進度分配如下：</p>
+
+        <h3>(一)、設計組進度（崔子育、余靜宣、林思妤）— 整體完成度 93%</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>項目分類</th>
+                    <th>具體內容</th>
+                    <th>狀態</th>
+                    <th>完成度</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>動畫與 CG</td>
+                    <td>開頭動畫、好/壞/普通結局 CG 與動畫</td>
+                    <td>已完成</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>UI 與圖檔</td>
+                    <td>主菜單、信箱、設定頁、存讀取介面、郵件與菜單模板</td>
+                    <td>已完成</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>文本編寫</td>
+                    <td>40封一般郵件文本、40封垃圾郵件文本</td>
+                    <td>已完成</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>特殊事件</td>
+                    <td>特殊事件文本編寫與通知框音效</td>
+                    <td>已完成</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>待補項目</td>
+                    <td>特殊事件通知框圖檔、新手指引文字框底圖與箭頭</td>
+                    <td>進行中</td>
+                    <td>30% ~ 80%</td>
+                </tr>
+                <tr>
+                    <td>網頁設計</td>
+                    <td>專題展示網頁與線上報告排版</td>
+                    <td>進行中</td>
+                    <td>0% -> 實施中</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>(二)、程式組進度（呂佳馨、陳昱辰）— 整體完成度 63%</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>項目分類</th>
+                    <th>具體內容 / 功能機制</th>
+                    <th>狀態</th>
+                    <th>完成度</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>資料庫與檢視</td>
+                    <td>信件內容資料庫建立、信件詳細檢視功能、遊戲存檔系統</td>
+                    <td>已完成</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>音量與系統</td>
+                    <td>主系統音量調整設定、介面返回首頁功能</td>
+                    <td>接近完成</td>
+                    <td>80% ~ 90%</td>
+                </tr>
+                <tr>
+                    <td>郵件機制</td>
+                    <td>獨立滾軸、信件隨機提取與隨機排序、刪除/存取信件機制</td>
+                    <td>接近完成</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>場景管理</td>
+                    <td>一至七天關卡切換（4月回報 Bug：卡在 Day 2 修正中）</td>
+                    <td>修正中</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>待開發功能</td>
+                    <td>教學關卡流程（第一天）、教學畫面指引、第七天結束返回首頁、關閉網頁動畫</td>
+                    <td>未完成</td>
+                    <td>0%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
